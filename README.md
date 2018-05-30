@@ -1,11 +1,14 @@
+# zGameWare正在整理中尚未正式开源，敬请关注
+
 # 什么是 zGameWare？
 
 zGameWare是一款跨平台2d游戏的制作中间件，它内置了并行化和多线程渲染框架，100%兼容fpc+lazarus和delphi xe10.1.2及以上版本。
 
-底层api支持各类渲染引擎，内置强大工具链，高级几何系统，导航网络，音频，核心规则，人工智能，大型资源包
+底层api支持各类渲染引擎，内置强大工具链，高级几何系统，导航网络，音频，核心规则，人工智能，大型资源包，内置跨平台ffmpeg支持
 
 **渲染器支持**
 - zGameWare内置软件渲染器，软件渲染器支持HPC服务器，跨平台
+- h.264内置推流渲染器，渲染到服务器推流协议，跨平台，在HPC实现可编程视频推流，无需显卡支持
 - PXL，asphyre的跨平台渲染库，https://sourceforge.net/projects/asphyre/
 - GLScene，知名opengl库，http://glscene.sourceforge.net/wikka/
 - vulkan，pascal圈最前沿的vulkan渲染引擎，https://github.com/BeRo1985/pasvulkan
@@ -84,10 +87,15 @@ zGameWare是一款跨平台2d游戏的制作中间件，它内置了并行化和
 - Tile地图编辑器（素材资源来自Warcaft3）
 - Brush地图编辑器（素材资源来自魔兽世界）
 - 部分从淘宝可购买的素材转换工具
+- 反走样字体生成工具
+- 2d骨骼动画工具
 
 **技术文档**
 - FMX渲染器的优化指南
 - GLscene渲染器的优化指南
+- bass部署指南
+- HDR对于画质的神奇提升
+- 多线程后台渲染技术指南
 
 **示范游戏**
 
