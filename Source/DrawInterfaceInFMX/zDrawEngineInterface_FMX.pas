@@ -610,7 +610,11 @@ begin
       if (TBitmap(t).Width = 0) or (TBitmap(t).Height = 0) then
           exit;
       if newSour.IsZero then
+          {$IF CompilerVersion > 220}
           newSour := TDE4V.Init(TBitmap(t).BoundsF, 0);
+          {$ELSE}
+          newSour := TDE4V.Init(Bounds(0, 0, TBitmap(t).Width, TBitmap(t).Height), 0);
+          {$ENDIF}
       if newDest.IsZero then
           newDest := newSour;
       if not IsEqual(newDest.Angle, 0, 0.1) then
